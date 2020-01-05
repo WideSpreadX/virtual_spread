@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/style/style1.css" />
+    <!-- aframe -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    <title>WideSpread</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-box color="lightskyblue" position="0 1 -6" scale="4 4 0.15"></a-box>
+      <a-box color="black" position="0 1 8" scale="4 4 0.15"></a-box>
+      <a-box
+        color="black"
+        position="8 1 0"
+        scale="4 4 0.15"
+        rotation="0 90 90"
+      ></a-box>
+      <a-box
+        color="black"
+        position="-8 1 0"
+        scale="4 4 0.15"
+        rotation="0 90 90"
+      ></a-box>
+      <a-box
+        color="white"
+        position="0 6 0"
+        scale="4 4 0.15"
+        rotation="90 0 0"
+      ></a-box>
+      <a-sky color="#222"></a-sky>
+    </a-scene>
+  </body>
+</html>
