@@ -1,0 +1,25 @@
+{
+  "name": "virtual_spread",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WideSpreadX/virtual_spread.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WideSpreadX/virtual_spread/issues"
+  },
+  "homepage": "https://github.com/WideSpreadX/virtual_spread#readme",
+  "dependencies": {
+    "aframe": "^1.0.3",
+    "aframe-charts-component": "^2.1.6",
+    "aframe-watcher": "^1.4.0"
+  }
+}
