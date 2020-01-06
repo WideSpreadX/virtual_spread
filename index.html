@@ -23,6 +23,27 @@
         position="0 6 -5.8"
         opacity="0.1"
       ></a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 0.25"
+        light="type: point; color: white; intensity: 8"
+        material="color: lightskyblue; shader: flat; src: glow.jpg"
+        position="0 6 5.8"
+        opacity="0.1"
+      ></a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 0.25"
+        light="type: point; color: white; intensity: 8"
+        material="color: lightskyblue; shader: flat; src: glow.jpg"
+        position="-5.8 6 0"
+        opacity="0.1"
+      ></a-entity>
+      <a-entity
+        geometry="primitive: sphere; radius: 0.25"
+        light="type: point; color: white; intensity: 8"
+        material="color: lightskyblue; shader: flat; src: glow.jpg"
+        position="-5.6 6 0"
+        opacity="0.1"
+      ></a-entity>
       <a-box
         color="blue"
         position="-3 1 -10"
@@ -39,8 +60,8 @@
 
       <a-box
         color="lightskyblue"
-        position="0 1 -5"
-        scale="8 4 0.05"
+        position="0 0 -6.5"
+        scale="8 5 0.05"
         opacity="0.3"
         material="shader: gradientshader; side: double; blending: additive; topColor: #11b6df; bottomColor: #1f4b87"
         geometry=""
@@ -80,26 +101,17 @@
       <!-- ws_storage -->
       <a-box
         color="lightskyblue"
-        position="0 1 5"
+        position="0 0 5"
         scale="8 4 0.05"
         opacity="0.3"
         material="shader: gradientshader; side: double; blending: additive; topColor: #11b6df; bottomColor: #1f4b87"
         geometry=""
         text__ws_landing="align: center; alphaTest: 1.43; color: #0ba9dd; height: 3.99; lineHeight: 1.51; side: double; transparent: false; value: Storage; width: 1.65"
         id="ws_storage"
-        rotatation="0 180 0"
         rotation="0 180 0"
       >
         <a-entity
           value="Storage"
-          color="white"
-          scale="3 2 1"
-          opacity="0.8"
-        ></a-entity>
-      </a-box>
-      <a-box>
-        <a-entity
-          value="WideSpread"
           color="white"
           scale="3 2 1"
           opacity="0.8"
@@ -133,6 +145,43 @@
         rotation="90 0 0"
         opacity="0.5"
       ></a-box>
+      <!-- Core -->
+      <a-box material="color: #2f2f2f" geometry="" position="-1.2 0 -0.65">
+      </a-box>
+      <!-- Cora -->
+      <a-sphere
+        position="-1.2 1 -0.65"
+        scale="0.5 0.5 0.5"
+        material="opacity: 0.69; ambientOcclusionMapIntensity: 7.88; ambientOcclusionTextureOffset: 2.92 1.57; ambientOcclusionTextureRepeat: 1.79 1; color: #55eae7; displacementBias: 0.24; emissive: #53afce; fog: false; metalness: 1; metalnessTextureOffset: 0.86 1.26; roughness: 1"
+        geometry=""
+      ></a-sphere>
+
+      <!-- SpreadWalls -->
+      <!-- LeftSpreadEntry -->
+      <a-box
+        position="-6 0 -6.45"
+        scale="4.08224 5 0.59398"
+        color="red"
+        material="shader: gradientshader; topColor: #050505; bottomColor: #7d7d7d"
+        geometry=""
+      ></a-box>
+      <!-- TopSpreadEntry -->
+      <a-box
+        position="-1 3 -6.45"
+        scale="14.08224 1.5 0.59398"
+        color="red"
+        material="shader: gradientshader; topColor: #050505; bottomColor: #7d7d7d"
+        geometry=""
+      ></a-box>
+      <!-- RightSpreadEntry -->
+      <a-box
+        position="4.9 0 -6.45"
+        scale="2.15 5 0.59398"
+        color="red"
+        material="shader: gradientshader; topColor: #050505; bottomColor: #7d7d7d"
+        geometry=""
+      ></a-box>
+      <!-- Image Gallery -->
 
       <a-sky color="#222"></a-sky>
     </a-scene>
