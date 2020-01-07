@@ -16,6 +16,82 @@
     <a-scene
       inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
     >
+       <a-assets>
+        <img id="my-image" src="./assets/images/world%space_1a1c.png" />
+      </a-assets>
+      <!-- Academy -->
+      <a-curvedimage
+        src="#my-image"
+        height="8.0"
+        position="4.8 1 -0.2"
+        radius="10"
+        theta-length="82"
+        rotation="0 90 0"
+        scale="0.8 0.8 0.8"
+      >
+        <a-entity
+          value="Academy"
+          color="white"
+          scale="3 2 1"
+          opacity="0.8"
+        ></a-entity>
+      </a-curvedimage>
+      <!-- Splitter Post Right -->
+      <a-box color="black" scale="1 10 2" position="13 2 0.5"></a-box>
+
+      <!-- Splitter Post Left -->
+      <a-box color="black" scale="1 10 2" position="-15.5 2 -0.5"></a-box>
+      <!-- Leisure -->
+      <a-curvedimage
+        src="#my-image"
+        height="8.0"
+        position="4.8 1 0.2"
+        radius="10"
+        theta-length="82"
+        rotation="0 0 0"
+        scale="0.8 0.8 0.8"
+      >
+        <a-entity
+          value="Academy"
+          color="white"
+          scale="3 2 1"
+          opacity="0.8"
+        ></a-entity>
+      </a-curvedimage>
+      <!-- Business -->
+      <a-curvedimage
+        src="#my-image"
+        height="8.0"
+        position="-7.2 1 -0.2"
+        radius="10"
+        theta-length="82"
+        rotation="0 180 0"
+        scale="0.8 0.8 0.8"
+      >
+        <a-entity
+          value="Academy"
+          color="white"
+          scale="3 2 1"
+          opacity="0.8"
+        ></a-entity>
+      </a-curvedimage>
+      <!-- Shopping -->
+      <a-curvedimage
+        src="#my-image"
+        height="8.0"
+        position="-7.2 1 0.2"
+        radius="10"
+        theta-length="82"
+        rotation="0 270 0"
+        scale="0.8 0.8 0.8"
+      >
+        <a-entity
+          value="Academy"
+          color="white"
+          scale="3 2 1"
+          opacity="0.8"
+        ></a-entity>
+      </a-curvedimage>
       <a-entity
         geometry="primitive: sphere; radius: 0.25"
         light="type: point; color: white; intensity: 8"
