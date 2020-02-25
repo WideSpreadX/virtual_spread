@@ -27,7 +27,6 @@ TOP MENU
 
 */
 .top-menu-container {
-  background: blue;
   padding-top: 0;
 }
 .top-menu-credentials {
@@ -69,9 +68,8 @@ TOP MENU
   font-family: "Michroma";
 }
 .top-menu-nav li:hover {
-  border-radius: 10px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.452),
-    inset 0 0 3px rgba(255, 255, 255, 0.637);
+  color: white;
+  text-shadow: 0 0 2px white;
   transition: ease-in 500ms;
 }
 .top-menu-nav a {
