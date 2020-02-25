@@ -1,3 +1,52 @@
+/* Google Fonts */
+
+/* 
+font-family: 'Montserrat Alternates', ;
+font-family: 'Michroma', ;
+*/
+
+#top_menu {
+  width: 90vw;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.473);
+  position: fixed;
+  z-index: 1000;
+  left: 5%;
+  top: 0;
+  box-shadow: 0 0 40px rgba(25, 186, 214, 0.644);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#top_menu h1 {
+  padding-left: 40px;
+  font-size: 3rem;
+  line-height: 2rem;
+  font-family: "Michroma";
+  text-shadow: 0 0 8px rgba(25, 186, 214, 0.644);
+  cursor: none;
+}
+#bottom_menu {
+  width: 200px;
+  height: 0;
+  background: lime;
+  position: fixed;
+  z-index: 900;
+  left: 0;
+  top: 100px;
+  box-shadow: 0 0 40px white;
+}
+#bottom_menu h1 {
+  padding: 10px;
+  font-family: "Michroma";
+  color: rgba(255, 255, 255, 0.699);
+  text-shadow: 0 0 6px rgba(131, 22, 22, 0.884);
+  cursor: pointer;
+}
+
+
+
+
+
 a-scene {
   background: #222;
 }
