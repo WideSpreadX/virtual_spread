@@ -6,58 +6,102 @@ font-family: 'Michroma', ;
 */
 
 #top_menu {
-  width: 100vw;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.473);
+  padding-top: 0;
+  margin-top: 0;
+  width: 90vw;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.342);
   position: fixed;
   z-index: 1000;
-  left: 0;
+  left: 5%;
   top: 0;
-  box-shadow: 0 0 40px rgba(25, 186, 214, 0.644);
+  box-shadow: 0 0 40px rgba(25, 186, 214, 0.644),
+    inset 0 0 20px rgba(25, 186, 214, 0.774);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  cursor: pointer;
 }
-#top_menu h1 {
-  width: 40vw;
-  padding-left: 40px;
-  font-size: 1.5rem;
-  line-height: 2rem;
+
+/* 
+
+TOP MENU
+
+*/
+.top-menu-container {
+  background: blue;
+  padding-top: 0;
+}
+.top-menu-credentials {
+  width: 30vw;
+  float: left;
+}
+.top-menu-credentials h1 {
+  padding-top: 0;
+  margin-top: 0;
+  height: 50px;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
   font-family: "Michroma";
   text-shadow: 0 0 8px rgba(25, 186, 214, 0.644);
   cursor: none;
+  width: 30vw;
 }
+.top-menu-nav {
+  padding-top: 5px;
+  margin-top: 0;
+  width: 55vw;
+  height: 50px;
+  float: left;
+}
+.top-menu-nav ul {
+  padding-top: 0;
+  margin-top: 0;
+}
+.top-menu-nav li {
+  padding-top: 2px;
+  margin-top: 5px;
+  width: 20%;
+  float: left;
+  margin-left: 25px;
+  text-align: center;
+  list-style: none;
+  font-size: 22px;
+  font-family: "Michroma";
+}
+.top-menu-nav li:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.452),
+    inset 0 0 3px rgba(255, 255, 255, 0.637);
+  transition: ease-in 500ms;
+}
+.top-menu-nav a {
+  text-shadow: 0 0 4px rgba(25, 186, 214, 0.844);
+  color: rgba(255, 255, 255, 0.452);
+  text-decoration: none;
+}
+
+/* 
+
+Bottom Menu
+
+*/
 #bottom_menu {
-  width: 200px;
-  height: 200px;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 56px;
+  background: rgba(15, 142, 151, 0.37);
   position: fixed;
   z-index: 900;
   left: 0;
-  top: 50px;
-  box-shadow: 0 0 40px white;
+  bottom: 0;
+  box-shadow: 0 0 10px white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 #bottom_menu h1 {
-  padding: 10px;
+  font-size: 20px;
+  padding-left: 15px;
   font-family: "Michroma";
   color: rgba(255, 255, 255, 0.699);
   text-shadow: 0 0 6px rgba(131, 22, 22, 0.884);
   cursor: pointer;
-}
-
-#bottom_menu h1:hover {
- text-shadow: 0 0 6px white; 
-}
-
-
-
-a-scene {
-  background: #222;
-}
-.audio {
-  position: fixed;
-  width: 10vw;
-  height: 5vh;
-  left: -15vw;
-  top: 5vh;
 }
