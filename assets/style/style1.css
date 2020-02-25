@@ -16,6 +16,7 @@ font-family: 'Michroma', ;
   box-shadow: 0 0 40px rgba(25, 186, 214, 0.644);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  cursor: pointer;
 }
 #top_menu h1 {
   padding-left: 40px;
