@@ -76,8 +76,12 @@ TOP MENU
   text-shadow: 0 0 4px rgba(25, 186, 214, 0.844);
   color: rgba(255, 255, 255, 0.452);
   text-decoration: none;
+  transition: ease-in 500ms;
 }
-
+.top-menu-nav a:hover {
+  transition: ease-in 500ms;
+  color: white;
+}
 /* 
 
 Bottom Menu
