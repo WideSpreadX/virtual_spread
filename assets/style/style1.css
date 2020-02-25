@@ -6,12 +6,12 @@ font-family: 'Michroma', ;
 */
 
 #top_menu {
-  width: 90vw;
-  height: 100px;
+  width: 100vw;
+  height: 50px;
   background: rgba(255, 255, 255, 0.473);
   position: fixed;
   z-index: 1000;
-  left: 5%;
+  left: 0;
   top: 0;
   box-shadow: 0 0 40px rgba(25, 186, 214, 0.644);
   border-bottom-left-radius: 30px;
@@ -19,8 +19,9 @@ font-family: 'Michroma', ;
   cursor: pointer;
 }
 #top_menu h1 {
+  width: 40vw;
   padding-left: 40px;
-  font-size: 3rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   font-family: "Michroma";
   text-shadow: 0 0 8px rgba(25, 186, 214, 0.644);
@@ -28,12 +29,12 @@ font-family: 'Michroma', ;
 }
 #bottom_menu {
   width: 200px;
-  height: 0;
-  background: lime;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 900;
   left: 0;
-  top: 100px;
+  top: 50px;
   box-shadow: 0 0 40px white;
 }
 #bottom_menu h1 {
