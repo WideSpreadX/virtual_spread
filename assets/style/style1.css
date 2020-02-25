@@ -43,7 +43,9 @@ font-family: 'Michroma', ;
   cursor: pointer;
 }
 
-
+#bottom_menu h1:hover {
+ text-shadow: 0 0 6px rgba(131, 22, 22, 0.884); 
+}
 
 
 
