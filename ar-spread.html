@@ -29,7 +29,7 @@
 
     <title>WideSpread</title>
   </head>
-  <body>
+  <body style='margin: 0; overflow: hidden;'>
     <!-- WideSpread Menu START -->
     <div id="top_menu">
       <div class="top-menu-container">
@@ -64,11 +64,21 @@
 
     <!-- WideSpread Menu END -->
 
+
+
+            
+
+
     <a-scene
-      loading-screen="dotsColor: lightskyblue; backgroundColor: black"
+        vr-mode-ui="enabled: false" embedded
+        arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
       inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
     >
       <!-- WideSpread Matrix -->
+
+    <a-camera gps-camera rotation-reader>
+        </a-camera>
+
 
       <a-entity>
         <a-box
