@@ -108,3 +108,14 @@ Bottom Menu
   text-shadow: 0 0 6px rgba(131, 22, 22, 0.884);
   cursor: pointer;
 }
+
+<!-- AR LOCATION MARKERS -->
+#place-label > span {
+    z-index: 99999;
+    padding: 0.25em;
+    color: #ff7500;
+    text-align: center;
+    background-color: rgba(0 0 0 0.5);
+    font-size: 1.5em;
+    border-radius: 5px;
+}
