@@ -48,7 +48,7 @@ window.onload = () => {
             `latitude: ${latitude}; longitude: ${longitude};`
           );
           placeText.setAttribute("title", place.name);
-          placeText.setAttribute("scale", "10 10 10");
+          placeText.setAttribute("scale", "15 15 15");
 
           placeText.addEventListener("loaded", () => {
             window.dispatchEvent(new CustomEvent("gps-entity-place-loaded"));
@@ -62,7 +62,7 @@ window.onload = () => {
     {
       enableHighAccuracy: true,
       maximumAge: 0,
-      timeout: 27000
+      timeout: 10000
     }
   );
 };
