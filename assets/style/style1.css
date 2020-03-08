@@ -90,7 +90,7 @@ Bottom Menu
 
 */
 #bottom_menu {
-  width: 100vw;
+  width: 80vw;
   height: 36px;
   background: rgba(15, 142, 151, 0.22);
   position: fixed;
@@ -102,8 +102,9 @@ Bottom Menu
   border-top-left-radius: 20px;
 }
 #bottom_menu h1 {
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 15px;
+  padding-bottom: 8px;
   font-family: "Michroma";
   color: rgba(255, 255, 255, 0.699);
   text-shadow: 0 0 6px rgba(131, 22, 22, 0.884);
@@ -111,6 +112,7 @@ Bottom Menu
 }
 
 <!-- AR LOCATION MARKERS -->
+
 #place-label > span {
     z-index: 99999;
     padding: 0.25em;
