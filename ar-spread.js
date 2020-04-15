@@ -48,7 +48,7 @@ window.onload = () => {
             `latitude: ${latitude}; longitude: ${longitude};`
           );
           placeText.setAttribute("title", place.name);
-          placeText.setAttribute("scale", "10 10 10");
+          placeText.setAttribute("scale", "5 5 5");
           
 
           placeText.addEventListener("loaded", () => {
