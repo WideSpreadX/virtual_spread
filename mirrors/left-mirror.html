@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Mirror</title>
+    <link rel="stylesheet" href="./mirror.css">
+
+    <script src="../build/tracking-min.js"></script>
+    <script src="../build/data/face-min.js"></script>
+     <script src="../node_modules/dat.gui/build/dat.gui.min.js"></script>
+    <script src="assets/stats.min.js"></script>
+  
+    <style>
+        body {
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="leftMirror">
+                <video id="video" width="220" height="340" preload autoplay loop muted></video>
+                <canvas id="canvas" width="220" height="340"></canvas>
+      </div>
+    <div id="rightMirror">
+                <video id="video2" width="320" height="240" preload autoplay loop muted></video>
+                <canvas id="canvas2" width="320" height="240"></canvas>
+      </div>
+      <script src="mirrorLogic.js"></script>
+</body>
+</html>

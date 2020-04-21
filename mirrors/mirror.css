@@ -1,0 +1,24 @@
+#leftMirror {
+    background: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#video, #canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: solid 4px yellow;
+}
+#video2, #canvas2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#rightMirror {
+    background: blue;
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}

@@ -20,6 +20,7 @@
   "dependencies": {
     "aframe": "^1.0.3",
     "aframe-charts-component": "^2.1.6",
-    "aframe-watcher": "^1.4.0"
+    "aframe-watcher": "^1.4.0",
+    "dotenv": "^8.2.0"
   }
 }

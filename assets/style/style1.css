@@ -111,12 +111,12 @@ Bottom Menu
   cursor: pointer;
 }
 
-<!-- AR LOCATION MARKERS -->
+
 
 #place-label > span {
     z-index: 99999;
     padding: 0.25em;
-    color: #ff7500;
+    color: #ffe600;
     text-align: center;
     background-color: rgba(0 0 0 0.5);
     font-size: 1.5em;

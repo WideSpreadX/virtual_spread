@@ -1,22 +1,22 @@
-// getting places from APIs
+/* const dotenv = require('dotenv').config();
+const CLIENT_ID = dotenv.FOURSQUARE_CLIENT_ID;
+const CLIENT_SECRET = dotenv.FOURSQUARE_CLIENT_SECRET; */
+
 function loadPlaces(position) {
   const params = {
-    radius: 1500, // search places not farther than this value (in meters)
+    radius: 2000,
     clientId: "BAVW34WNTJEZ2HC1HIB4R5VCGAORU2N0GNGZ1OOPCYWSBD1Y",
     clientSecret: "5AEIKFIMLUVNRTWXDLOVWHE3BVMXIOCQH2DX4BGXLLEIW0H4",
     version: "20300101"
   };
 
-  // CORS Proxy
   const corsProxy = "https://cors-anywhere.herokuapp.com/";
-
-  // Foursquare API (limit param: number of maximum places to fetch)
   const endpoint = `${corsProxy}https://api.foursquare.com/v2/venues/search?intent=checkin
         &ll=${position.latitude},${position.longitude}
         &radius=${params.radius}
         &client_id=${params.clientId}
         &client_secret=${params.clientSecret}
-        &limit=50 
+        &limit=20 
         &v=${params.version}`;
   return fetch(endpoint)
     .then(res => {
@@ -41,14 +41,14 @@ window.onload = () => {
           const latitude = place.location.lat;
           const longitude = place.location.lng;
 
-          // add place name
+          // Place Marker Attributes
           const placeText = document.createElement("a-link");
           placeText.setAttribute(
             "gps-entity-place",
             `latitude: ${latitude}; longitude: ${longitude};`
           );
           placeText.setAttribute("title", place.name);
-          placeText.setAttribute("scale", "5 5 5");
+          placeText.setAttribute("scale", "7 7 7");
           
 
           placeText.addEventListener("loaded", () => {
@@ -59,11 +59,11 @@ window.onload = () => {
         });
       });
     },
-    err => console.error("Error in retrieving position", err),
+    err => console.error("I'm sorry, we were unable to retrieve your position", err),
     {
       enableHighAccuracy: true,
       maximumAge: 0,
-      timeout: 5000
+      timeout: 20000
     }
   );
 };
