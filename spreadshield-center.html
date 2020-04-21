@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Style -->
+   <!-- <link rel="stylesheet" href="./frontend/overlay-style.css" /> -->
+        <link rel="stylesheet" href="./assets/style/style1.css" />
+        <link rel="stylesheet" href="./assets/style/spreadshield.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Michroma|Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery -->
+
+
+   
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- aframe -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    <!-- aFrame - html-embed  -->
+    <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
+    <!-- ARjs -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <!-- aFrame html-shader -->
+    <script src="https://unpkg.com/aframe-html-shader@0.5.0/dist/aframe-html-shader.min.js"></script>
+
+    <title>WideSpread</title>
+  </head>
+  <body style='margin: 0; overflow: hidden;'>
+    <!-- WideSpread Menu START -->
+    <div id="top_menu">
+      <div class="top-menu-container">
+        <div class="top-menu-credentials">
+          <div class="logo">
+            <h1>WideSpread</h1>
+          </div>
+        </div>
+        <div class="top-menu-nav">
+          <ul>
+            <!-- Landing -->
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <!-- AR -->
+            <li>
+              <a href="./ar-spread.html">AR</a>
+            </li>
+            <!-- SpreadShield -->
+            <li><a href="./spreadshield-center.html">SpreadShield</a></li>
+            <!-- Search -->
+            <li>
+              <a href="./index.html">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="bottom_menu">
+      <h1>WideSpread</h1>
+    </div>
+
+    <!-- WideSpread Menu END -->
+
+
+
+            
+
+    <!--  AR START -->
+
+<!--  CELL PHONE SIZES START -->
+
+
+<!--  
+3840x2160 (4K UHD) (60 fps), 1920x1080 (Full HD) (240 fps), 1280x720 (HD) (960 fps)
+Note 10+ - 2930x1440
+-->
+
+
+<!--  CELL PHONE SIZES END -->
+
+    <a-scene
+    vr-mode-ui="enabled: true" embedded
+        arjs='sourceType: webcam; sourceWidth:3840; sourceHeight:2160; displayWidth: 2160; displayHeight: 1080; debugUIEnabled: false;'
+      inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
+    >
+      <!-- WideSpread Matrix -->
+
+      
+    <a-camera gps-camera rotation-reader>
+        </a-camera>
+<!-- Businesses Appear Below -->
+
+
+
+      <!-- WideSpread Matrix -->
+    </a-scene>
+
+
+    <!-- AR END  -->
+
+    <!-- Background Audio -->
+
+
+    <script src="ar-spread.js"></script>
+    <script src="./assets/js/charts/chart1.js"></script>
+  </body>
+</html>
