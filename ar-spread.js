@@ -62,8 +62,8 @@ window.onload = () => {
     err => console.error("I'm sorry, we were unable to retrieve your position", err),
     {
       enableHighAccuracy: true,
-      maximumAge: 0,
-      timeout: 20000
+      maximumAge: 5000,
+      timeout: 3000
     }
   );
 };
