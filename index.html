@@ -15,6 +15,7 @@
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
     <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
+    <script src="https://raw.githack.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
 
     <title>WideSpread</title>
   </head>
@@ -47,7 +48,7 @@
       <h1>Notifications</h1>
     </div>
     <a-scene
-	     loading-screen="dotsColor: lightskyblue; backgroundColor: black
+	     loading-screen="dotsColor: lightskyblue; backgroundColor: black"
       inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
     >
       <a-assets>
@@ -63,6 +64,11 @@
         scale="2 3.355 1"
       ></a-image>
             <!-- SocialSpread -->
+ 
+            <a-box color="#00AA00" position="1 1.5 -5" class="clickable"
+            blink-teleportation="pos: 1 0 -9; hide: true">
+            </a-box>
+     
       <a-entity
         position="1.2 1.3 -10" htmlembed>
         <h1 color="#fff" size="48px">SocialSpread</h1>
@@ -142,7 +148,20 @@
       <!-- Book -->
       <a-entity position="9.58821 3.82241 -6.47627" scale="3.29263 3.33823 1" text__ws_academy="align: center; alphaTest: 1.25; color: #e9ee1c; height: 3.44; side: double; transparent: false; value: Academy; width: 3.04" rotation="0 -36.9855715912849 0"></a-entity>
      <a-entity id="academy_screen1" geometry="" material="alphaTest: 0.8; flatShading: true; shader: flat; color: #444" position="18.753 1.137 -3.571" scale="4 3 0.25" rotation="0 90 0"></a-entity>
-      <a-curvedimage
+     
+     <a-box color="#00AA00" position="-5 1.5 -6" class="clickable" scale="0.5 0.5 0.5"
+     blink-teleportation="pos: -16 0 -8; hide: true">
+     </a-box>
+     <a-box color="#00AA00" position="4 1.5 4" class="clickable" scale="0.5 0.5 0.5"
+     blink-teleportation="pos: 16 0 8; hide: true">
+     </a-box>
+     <a-box color="#00AA00" position="4 1.5 -2" class="clickable" scale="0.5 0.5 0.5"
+     blink-teleportation="pos: 16 0 -8; hide: true">
+     </a-box>
+     <a-box color="#00AA00" position="-5 1.5 4" class="clickable" scale="0.5 0.5 0.5"
+     blink-teleportation="pos: -16 0 8; hide: true">
+     </a-box>
+     <a-curvedimage
         src="#my-image"
         height="8.0"
         position="4.8 1 -0.2"
@@ -490,16 +509,21 @@
       ></a-cone>
 
       <a-sky color="#222"></a-sky>
+      <a-entity id="camRig" position="0 0 0">
+        <!-- CAMERA -->
+        <a-camera id="cam" wasd-controls-enabled="false">
+        </a-camera>
+      </a-entity>
     </a-scene>
         <div class="audio">
-      <iframe
+<!--       <iframe
         width="100%"
         height="300"
         scrolling="no"
         frameborder="no"
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/697052167&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-      ></iframe>
+      ></iframe> -->
     </div>
     <script src="./assets/js/charts/chart1.js"></script>
   </body>
