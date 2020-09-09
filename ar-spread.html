@@ -56,10 +56,6 @@
             </li>
             <!-- SpreadShield -->
             <li><a href="./spreadshield-center.html">SpreadShield</a></li>
-            <!-- Search -->
-            <li>
-              <a href="./index.html">Search</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -92,15 +88,15 @@ Note 10+ - 2930x1440
 <!--  CELL PHONE SIZES END -->
 
     <a-scene
+    loading-screen="dotsColor: lightskyblue; backgroundColor: black"
         vr-mode-ui="enabled: true" embedded
         arjs='sourceType: webcam; sourceWidth:3840; sourceHeight:2160; displayWidth: 2930; displayHeight: 1440; debugUIEnabled: false;'
       inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
     >
       <!-- WideSpread Matrix -->
-
+      <a-camera gps-camera rotation-reader>
+      </a-camera>
       
-    <a-camera gps-camera rotation-reader>
-        </a-camera>
 <!-- Businesses Appear Below -->
 
 
