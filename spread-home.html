@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/style/style1.css" />
+	      <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Michroma|Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aframe -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script>
+    <script src="https://raw.githack.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
+
+    <title>WideSpread</title>
+  </head>
+  <body>
+    <div id="top_menu">
+            <div class="top-menu-container">
+        <div class="top-menu-credentials">
+          <div class="logo">
+            <h1>WideSpread</h1>
+          </div>
+        </div>
+        <div class="top-menu-nav">
+          <ul>
+            <!-- Landing Page -->
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <!-- AR-Spread -->
+            <li>
+              <a href="./ar-spread.html">AR</a>
+            </li>
+            <!-- SpreadShield -->
+            <li><a href="./spreadshield-center.html">SpreadShield</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="bottom_menu">
+      <h1>Notifications</h1>
+    </div>
+    <a-scene
+	     loading-screen="dotsColor: lightskyblue; backgroundColor: black"
+      inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
+    >
+    <a-assets>
+        <img id="3d-grid" src="./assets/equi/3d-grid_3.jpg" alt="">
+    </a-assets>
+    <a-sky src="#3d-grid"></a-sky>
+    <a-entity id="camRig" position="0 0 0">
+      <!-- CAMERA -->
+      <a-camera id="cam" wasd-controls-enabled="false">
+        <a-cursor color="	#00ffff" opacity="1"></a-cursor>
+      </a-camera>
+    </a-entity>
+  </a-scene>
+
+  <script src="./assets/js/charts/chart1.js"></script>
+</body>
+</html>
