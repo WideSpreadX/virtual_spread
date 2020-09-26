@@ -96,14 +96,97 @@ Note 10+ - 2930x1440
     >
     <a-assets>
         <img src="./assets/images/golf/tee_1a1a1a.png" id="tee">
+        <img src="./assets/images/golf/pin_1a1a1a.png" id="pin">
     </a-assets>
-<!--         <a-entity gps-entity-place="latitude: 28.890963; longitude: -81.996129" scale="3 3 3">
-            <a-text value="Hole 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+    <!-- Hole 1 -->
+    <a-entity gps-entity-place="latitude: 28.890963; longitude: -81.996129" scale="3 3 3">
+        <a-text value="Tee 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+        <a-image src="#tee"></a-image>
+    </a-entity>
+    
+    <a-entity gps-entity-place="latitude: 28.886953; longitude: -81.997775" scale="3 3 3">
+        <a-text value="Pin 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+        <a-image src="#pin"></a-image>
+    </a-entity>
+    
+    <!-- Hole 2 -->
+         <a-entity gps-entity-place="latitude: 28.886473; longitude: -81.998529" scale="3 3 3">
+            <a-text value="Tee 2" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
-        </a-entity> -->
-        <a-entity gps-entity-place="latitude: 28.847003; longitude: -82.003886">
-            <a-text value="Hole 1" scale="4 4 4" position="0 2 0"></a-text>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.886460; longitude: -82.000231">
+            <a-text value="Pin 2" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 3 -->
+         <a-entity gps-entity-place="latitude: 28.885390; longitude: -81.999751" scale="3 3 3">
+            <a-text value="Tee 3" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.882371; longitude: -81.999771">
+            <a-text value="Pin 3" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 4 -->
+         <a-entity gps-entity-place="latitude: 28.881570; longitude: -81.999873" scale="3 3 3">
+            <a-text value="Tee 4" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.878997; longitude: -82.001800">
+            <a-text value="Pin 4" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 5 -->
+         <a-entity gps-entity-place="latitude: 28.878667; longitude: -82.002760" scale="3 3 3">
+            <a-text value="Tee 5" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.881232; longitude: -82.004267">
+            <a-text value="Pin 5" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 6 -->
+         <a-entity gps-entity-place="latitude: 28.881645; longitude: -82.004299" scale="3 3 3">
+            <a-text value="Tee 6" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.884706; longitude: -82.004533">
+            <a-text value="Pin 6" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 7 -->
+         <a-entity gps-entity-place="latitude: 28.885185; longitude: -82.003519" scale="3 3 3">
+            <a-text value="Tee 7" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.885420; longitude: -82.000529">
+            <a-text value="Pin 7" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 8 -->
+         <a-entity gps-entity-place="latitude: 28.887108; longitude: -82.000054" scale="3 3 3">
+            <a-text value="Tee 8" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.887091; longitude: -81.998795">
+            <a-text value="Pin 8" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
+        </a-entity>
+    
+    <!-- Hole 9 -->
+         <a-entity gps-entity-place="latitude: 28.887288; longitude: -82.000054" scale="3 3 3">
+            <a-text value="Tee 9" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.891430; longitude: -81.996736">
+            <a-text value="Pin 9" color="#ffffff"></a-text>
+            <a-image src="#pin"></a-image>
         </a-entity>
       <!-- WideSpread Matrix -->
       <a-camera gps-camera rotation-reader>
@@ -122,10 +205,12 @@ Note 10+ - 2930x1440
     <!-- Background Audio -->
 
 
-    <script>
+   <!--  <script>
 window.onload = () => {
      let places = staticLoadPlaces();
+     let pins = staticLoadPins();
      renderPlaces(places);
+     renderPins(pins);
 };
 
 function staticLoadPlaces() {
@@ -137,6 +222,129 @@ function staticLoadPlaces() {
                 lng: 28.890963,
             }
         },
+        {
+            number: '2',
+            location: {
+                lat: -81.998529,
+                lng: 28.886473,
+            }
+        },
+        {
+            number: '3',
+            location: {
+                lat: -81.999751,
+                lng: 28.885390,
+            }
+        },
+        {
+            number: '4',
+            location: {
+                lat: -81.999873,
+                lng: 28.881570,
+            }
+        },
+        {
+            number: '5',
+            location: {
+                lat: -82.002760,
+                lng: 28.878667,
+            }
+        },
+        {
+            number: '6',
+            location: {
+                lat: -82.004299,
+                lng: 28.881645,
+            }
+        },
+        {
+            number: '7',
+            location: {
+                lat: -82.003519,
+                lng: 28.885185,
+            }
+        },
+        {
+            number: '8',
+            location: {
+                lat: -82.000054,
+                lng: 28.887108,
+            }
+        },
+        {
+            number: '9',
+            location: {
+                lat: -82.000054,
+                lng: 28.887288,
+            }
+        }
+    ];
+}
+function staticLoadPins() {
+    return [
+        {
+            number: '1',
+            location: {
+                lat: -81.997775,
+                lng: 28.886953,
+            }
+        },
+        {
+            number: '2',
+            location: {
+                lat: -82.000231,
+                lng: 28.886460,
+            }
+        },
+        {
+            number: '3',
+            location: {
+                lat: -81.999771,
+                lng: 28.882371,
+            }
+        },
+        {
+            number: '4',
+            location: {
+                lat: -82.001800,
+                lng: 28.878997,
+            }
+        },
+        {
+            number: '5',
+            location: {
+                lat: -82.004267,
+                lng: 28.881232,
+            }
+        },
+        {
+            number: '6',
+            location: {
+                lat: -82.004533,
+                lng: 28.884706,
+            }
+        },
+        {
+            number: '7',
+            location: {
+                lat: -82.000529,
+                lng: 28.885420,
+            }
+        },
+        {
+            number: '8',
+            location: {
+                lat: -81.998795,
+                lng: 28.887091,
+            }
+        },
+        {
+            number: '9',
+            location: {
+                lat: -81.996736,
+                lng: 28.891430,
+            }
+        }
     ];
 }
 
@@ -146,16 +354,17 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
+        let number = place.number;
 
         let tee = document.createElement('a-entity');
 
         tee.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-
+/* 
         let teeNumber = document.createElement('a-text');
-        teeNumber.setAttribute(`value: ${number}`)
+        teeNumber.setAttribute(`text: ${number}`)
         tee.appendChild(teeNumber);
-
-        const teeImage = document.createElement('a-image');
+ */
+        let teeImage = document.createElement('a-image');
         teeImage.setAttribute('src: #tee');
         tee.appendChild(teeImage);
 
@@ -167,7 +376,36 @@ function renderPlaces(places) {
         console.log(tee);
     });
 }
-    </script>
+
+function renderPins(pins) {
+    let scene = document.querySelector('a-scene');
+
+    pins.forEach((pin) => {
+        let latitude = pin.location.lat;
+        let longitude = pin.location.lng;
+        let number = pin.number;
+
+        let hole = document.createElement('a-entity');
+
+        hole.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+
+        let holeNumber = document.createElement('a-text');
+        holeNumber.setAttribute(`value: ${number}`)
+        hole.appendChild(holeNumber);
+
+        const holeImage = document.createElement('a-image');
+        holeImage.setAttribute('src: #pin');
+        hole.appendChild(holeImage);
+
+        hole.addEventListener('loaded', () => {
+            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+        });
+
+        scene.appendChild(hole);
+        console.log(hole);
+    });
+}
+    </script> -->
     <script src="./assets/js/charts/chart1.js"></script>
   </body>
 </html>
