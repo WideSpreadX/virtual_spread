@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #224941 url('./assets/images/background_1a1a1a.jpg') no-repeat center center/cover;
+  background: #224941 url('../images/background_1a1a1a.jpg') no-repeat center center/cover;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
