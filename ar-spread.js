@@ -42,11 +42,22 @@ window.onload = () => {
           const longitude = place.location.lng;
 
           // Place Marker Attributes
-          const placeText = document.createElement("a-link");
+          const placeText = document.createElement("a-entity");
           placeText.setAttribute(
             "gps-entity-place",
-            `latitude: ${latitude}; longitude: ${longitude};`
+            `latitude: ${latitude}; longitude: ${longitude};`,
+            "link", "backgroundColor: #00ffff; borderColor: #ffffff;"
           );
+          const placeName = document.createElement("a-text");
+          
+          placeName.setAttribute("value", place.name);
+          placeText.appendChild(placeName);
+
+          const placePin = document.createElement("a-ring");
+          placePin.setAttribute("color", "teal");
+          placePin.setAttribute("radius-inner", "1.5");
+          placePin.setAttribute("radius-outer", "2");
+          placeText.appendChild(placePin);
           placeText.setAttribute("title", place.name);
           placeText.setAttribute("scale", "7 7 7");
           
@@ -56,6 +67,9 @@ window.onload = () => {
           });
 
           scene.appendChild(placeText);
+          console.log(places);
+          console.log(placeName);
+          console.log(placePin);
         });
       });
     },
