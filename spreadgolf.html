@@ -97,10 +97,10 @@ Note 10+ - 2930x1440
     <a-assets>
         <img src="./assets/images/golf/tee_1a1a1a.png" id="tee">
     </a-assets>
-        <a-entity gps-entity-place="latitude: 28.890963; longitude: -81.996129">
-            <a-text value="Hole 1" scale="4 4 4" position="0 2 0"></a-text>
+<!--         <a-entity gps-entity-place="latitude: 28.890963; longitude: -81.996129" scale="3 3 3">
+            <a-text value="Hole 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
-        </a-entity>
+        </a-entity> -->
         <a-entity gps-entity-place="latitude: 28.847003; longitude: -82.003886">
             <a-text value="Hole 1" scale="4 4 4" position="0 2 0"></a-text>
             <a-image src="#tee"></a-image>
@@ -123,15 +123,50 @@ Note 10+ - 2930x1440
 
 
     <script>
-        window.onload = () => {
-  const scene = document.querySelector("a-scene");
+window.onload = () => {
+     let places = staticLoadPlaces();
+     renderPlaces(places);
+};
 
-  // Get current user location
-  return navigator.geolocation.getCurrentPosition(
+function staticLoadPlaces() {
+    return [
+        {
+            number: '1',
+            location: {
+                lat: -81.996129,
+                lng: 28.890963,
+            }
+        },
+    ];
+}
 
-  );
-        }
-      
+function renderPlaces(places) {
+    let scene = document.querySelector('a-scene');
+
+    places.forEach((place) => {
+        let latitude = place.location.lat;
+        let longitude = place.location.lng;
+
+        let tee = document.createElement('a-entity');
+
+        tee.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+
+        let teeNumber = document.createElement('a-text');
+        teeNumber.setAttribute(`value: ${number}`)
+        tee.appendChild(teeNumber);
+
+        const teeImage = document.createElement('a-image');
+        teeImage.setAttribute('src: #tee');
+        tee.appendChild(teeImage);
+
+        tee.addEventListener('loaded', () => {
+            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+        });
+
+        scene.appendChild(tee);
+        console.log(tee);
+    });
+}
     </script>
     <script src="./assets/js/charts/chart1.js"></script>
   </body>
