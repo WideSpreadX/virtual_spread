@@ -94,6 +94,17 @@ Note 10+ - 2930x1440
         arjs='sourceType: webcam; sourceWidth:3840; sourceHeight:2160; displayWidth: 2930; displayHeight: 1440; debugUIEnabled: false;'
       inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
     >
+    <a-assets>
+        <img src="./assets/images/golf/tee_1a1a1a.png" id="tee">
+    </a-assets>
+        <a-entity gps-entity-place="latitude: 28.890963; longitude: -81.996129">
+            <a-text value="Hole 1" scale="4 4 4" position="0 2 0"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
+        <a-entity gps-entity-place="latitude: 28.847003; longitude: -82.003886">
+            <a-text value="Hole 1" scale="4 4 4" position="0 2 0"></a-text>
+            <a-image src="#tee"></a-image>
+        </a-entity>
       <!-- WideSpread Matrix -->
       <a-camera gps-camera rotation-reader>
       </a-camera>
@@ -111,7 +122,17 @@ Note 10+ - 2930x1440
     <!-- Background Audio -->
 
 
-    <script src="ar-spread.js"></script>
+    <script>
+        window.onload = () => {
+  const scene = document.querySelector("a-scene");
+
+  // Get current user location
+  return navigator.geolocation.getCurrentPosition(
+
+  );
+        }
+      
+    </script>
     <script src="./assets/js/charts/chart1.js"></script>
   </body>
 </html>
