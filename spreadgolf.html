@@ -32,6 +32,8 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <!-- aFrame html-shader -->
     <script src="https://unpkg.com/aframe-html-shader@0.5.0/dist/aframe-html-shader.min.js"></script>
+    <!-- aFrame Look-at Component -->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script> 
 
     <title>WideSpread</title>
   </head>
@@ -99,104 +101,109 @@ Note 10+ - 2930x1440
         <img src="./assets/images/golf/pin_1a2a1a.png" id="pin" width="100px" height="100px">
         <!-- <img src="./assets/images/traffic/security-gate_1a1a1a.png" id="accessGate" width="100px" height="100px"> -->
     </a-assets>
+    <a-camera id="cam" gps-camera rotation-reader>
+    </a-camera>
+    <a-entity look-at="#cam" gps-entity-place="latitude: 28.846959; longitude: -82.003868" scale="3 3 3">
+        <a-text value="Test" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
+        <a-image src="#tee>
+    </a-entity>
     <!-- Hole 1 -->
-    <a-entity gps-entity-place="latitude: 28.847006; longitude: -82.003884" scale="3 3 3">
+    <a-entity look-at="#cam" gps-entity-place="latitude: 28.872171; longitude: -81.967572" scale="3 3 3">
         <a-text value="Tee 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
         <a-image src="#tee"></a-image>
     </a-entity>
     
-    <a-entity gps-entity-place="latitude: 28.847687; longitude: -82.003206" scale="3 3 3">
+    <a-entity look-at="#cam" gps-entity-place="latitude: 28.874551; longitude: -81.968312" scale="3 3 3">
         <a-text value="Pin 1" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
         <a-image src="#pin"></a-image>
     </a-entity>
     <!-- Access Gate (test) -->
-<!--     <a-entity gps-entity-place="latitude: 28.848312; longitude: -82.004020" scale="3 3 3">
+<!--     <a-entity look-at="#cam" gps-entity-place="latitude: 28.848312; longitude: -82.004020" scale="3 3 3">
         <a-text value="Access Gate" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
         <a-image src="#accessGate"></a-image>
     </a-entity>
      -->
     <!-- Hole 2 -->
-         <a-entity gps-entity-place="latitude: 28.886473; longitude: -81.998529" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.875500; longitude: -81.969620" scale="3 3 3">
             <a-text value="Tee 2" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.886460; longitude: -82.000231">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.875481; longitude: -81.972704">
             <a-text value="Pin 2" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 3 -->
-         <a-entity gps-entity-place="latitude: 28.885390; longitude: -81.999751" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.875769; longitude: -81.973339" scale="3 3 3">
             <a-text value="Tee 3" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.882371; longitude: -81.999771">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.878035; longitude: -81.974766">
             <a-text value="Pin 3" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 4 -->
-         <a-entity gps-entity-place="latitude: 28.881570; longitude: -81.999873" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.878705; longitude: -81.975805" scale="3 3 3">
             <a-text value="Tee 4" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.878997; longitude: -82.001800">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.879144; longitude: -81.977154">
             <a-text value="Pin 4" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 5 -->
-         <a-entity gps-entity-place="latitude: 28.878667; longitude: -82.002760" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.878794; longitude: -81.978506" scale="3 3 3">
             <a-text value="Tee 5" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.881232; longitude: -82.004267">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.880184; longitude: -81.982964">
             <a-text value="Pin 5" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 6 -->
-         <a-entity gps-entity-place="latitude: 28.881645; longitude: -82.004299" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.880824; longitude: -81.982280" scale="3 3 3">
             <a-text value="Tee 6" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.884706; longitude: -82.004533">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.879806; longitude: -81.978749">
             <a-text value="Pin 6" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 7 -->
-         <a-entity gps-entity-place="latitude: 28.885185; longitude: -82.003519" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.880103; longitude: -81.976693" scale="3 3 3">
             <a-text value="Tee 7" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.885420; longitude: -82.000529">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.879483; longitude: -81.975463">
             <a-text value="Pin 7" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 8 -->
-         <a-entity gps-entity-place="latitude: 28.887108; longitude: -82.000054" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.878008; longitude: -81.972947" scale="3 3 3">
             <a-text value="Tee 8" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.887091; longitude: -81.998795">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.876040; longitude: -81.969511">
             <a-text value="Pin 8" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
     
     <!-- Hole 9 -->
-         <a-entity gps-entity-place="latitude: 28.887288; longitude: -82.000054" scale="3 3 3">
+         <a-entity look-at="#cam" gps-entity-place="latitude: 28.874644; longitude: -81.967434" scale="3 3 3">
             <a-text value="Tee 9" scale="4 4 4" position="0 2 0" color="#ffffff"></a-text>
             <a-image src="#tee"></a-image>
         </a-entity>
-        <a-entity gps-entity-place="latitude: 28.891430; longitude: -81.996736">
+        <a-entity look-at="#cam" gps-entity-place="latitude: 28.872390; longitude: -81.966331">
             <a-text value="Pin 9" color="#ffffff"></a-text>
             <a-image src="#pin"></a-image>
         </a-entity>
       <!-- WideSpread Matrix -->
-      <a-camera gps-camera rotation-reader>
-      </a-camera>
+
       
 <!-- Businesses Appear Below -->
 
