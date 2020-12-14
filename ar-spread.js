@@ -51,7 +51,6 @@ window.onload = () => {
           const placeName = document.createElement("a-text");
           
           placeName.setAttribute("value", place.name);
-          placeName.setAttribute("align", "center");
           placeText.appendChild(placeName);
 
           const placePin = document.createElement("a-ring");
